@@ -4,7 +4,7 @@ SELECT
     InvoiceLine.TrackId,
     InvoiceLine.UnitPrice,
     InvoiceLine.Quantity,
-    Track.Name,
+    Track.Name AS trackName,
     Artist.Name
 FROM InvoiceLine
 JOIN Track ON InvoiceLine.TrackId = Track.TrackId
